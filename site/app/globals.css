@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+html{
+  scroll-behavior: smooth;
+}
+
+p {
+  @apply text-sm md:text-base text-opacity-75 transition duration-1000 ease-in-out text-gray-800 dark:text-gray-300
+}
+h1{
+  @apply text-4xl sm:text-5xl md:text-6xl
+}
+h2{
+  @apply text-2xl sm:text-3xl md:text-4xl
+}
+h3{
+  @apply text-xl sm:text-2xl md:text-3xl
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-opacity-75 transition duration-1000 ease-in-out 
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+
+}
+.flip-card:hover .flip-card-front{
+  transition-delay: 0.2s;
+  transition-property: opacity;
+  opacity:0;
+  
+
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  transition-delay: 0.2s;
+  transition-property: opacity;
+  opacity: 100;
+  background-color: transparent;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
