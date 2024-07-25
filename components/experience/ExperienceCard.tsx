@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import CardFront from "./CardFront";
 import CardBack from "./CardBack";
-import useWindowDimensions from "@/app/hooks/getWindow";
+import useWindowDimensions from "@/hooks/getWindow";
 
 export interface CardProps{
     range:string;

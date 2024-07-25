@@ -1,11 +1,11 @@
-import AboutMe from "./components/AboutMe";
-import SideNav from "./components/nav/SideNav";
-import Experience from "./components/experience/Experience";
-import DarkGradientBackground from "./components/DarkGradientBackground";
-import LightGradientBackground from "./components/LightGradientBackground";
-import ThemeSwitch from "./components/ThemeSwitch";
-import Projects from "./components/projects/Projects";
-import SocialLinks from "./components/nav/SocialLinks";
+import AboutMe from "../components/AboutMe";
+import SideNav from "../components/nav/SideNav";
+import Experience from "../components/experience/Experience";
+import DarkGradientBackground from "../components/DarkGradientBackground";
+import LightGradientBackground from "../components/LightGradientBackground";
+import ThemeSwitch from "../components/ThemeSwitch";
+import Projects from "../components/projects/Projects";
+import SocialLinks from "../components/nav/SocialLinks";
 
 export default function Home() {
   return (
