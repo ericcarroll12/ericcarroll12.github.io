@@ -19,7 +19,7 @@ export default function Experience(){
         <h2>Experience</h2>  
         <NewCard range="2023-Present" job_title="Technical lead" job_subtitle={leadSubtitle} description={techLeadDescription} tags={leadTags} link={leadLink}/>
         <NewCard range="2019-2023" job_title="Full stack developer" job_subtitle={freelanceSubtitle} description={freelancerDescription} tags={freelanceTags}/>
-        <NewCard range="2017-2023" job_title="Client relationship consultant" job_subtitle="U.S. Bank" description={bankDescription} tags={bankTags} link={bankLink}/>
+        <NewCard range="2016-2021" job_title="Client relationship consultant" job_subtitle="U.S. Bank" description={bankDescription} tags={bankTags} link={bankLink}/>
     </div>
     )
 }
